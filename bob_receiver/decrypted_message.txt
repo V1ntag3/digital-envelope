@@ -1,0 +1,1 @@
+esse e um arquivo texto padrao para testar o programa

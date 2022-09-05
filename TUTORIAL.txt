@@ -1,0 +1,22 @@
+Opções de desenvolvimento:
+1 - cada pasta representa a visão da Alice(remente) e Bob(destinatário)
+2 - ao rodar o "creation_of_asymmetric_keys.py" são criadas novas keys, substituindo as antigas, logo será necessário encriptar novamente a mensagem
+3 - a mensagem / texto em claro esta disponível para ser vizualizado e modificado na pasta "alice_sender" e está com o nome de "plaintext.txt"
+4 - é possivel mudar o caminho como é mostrado do menu mas caso não queira está tudo definido por padrão para testes
+5 - as entradas são feitas por teclado no console basta digitar a abreviação do algoritmo 
+4 - foi utlizado o pycryptodome
+Ordem de execução:
+1 - "creation_of_asymmetric_keys.py" - cria as chaves assimetricas - Opicional
+2 - "digital_envelope_creation.py" - cria o envelope digital
+    2.1 - digitar o caminho do texto em claro Ex: "testes/texto.txt"
+    2.2 - digitar o caminho da chave pública do destinatário Ex: "testes/chave_publica.pem"
+    2.3 - digitar o algoritmo a ser utilizado Ex: "aes" ou "AES"
+3 - "open_digital_envelope.py" - abre o envelope e mostra a mensagem
+    3.1 - digitar o caminho onde esta a mensagem encriptada Ex: "testes/texto_enc.base64"
+    3.2 - digitar o caminho da chave encriptada Ex: "testes/chave_enc.base64"
+    3.3 - digitar o caminho onde esta a chave privada do destinatário Ex: "testes/chave_privada.pem"
+    3.4 - digitar o algoritmo a ser utilizado Ex: "aes" ou "AES"
+Grupo:
+1 - Emanuel Mendes
+2 - Felipe Santigo
+3 - Marcos Vinicius
